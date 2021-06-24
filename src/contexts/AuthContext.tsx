@@ -66,6 +66,5 @@ export const AuthContextProvider = (props: AuthContextProviderProps) => {
         <AuthContext.Provider value={{ user, signInWithGoolge }}>
             {props.children}
         </AuthContext.Provider>
-
     )
 }

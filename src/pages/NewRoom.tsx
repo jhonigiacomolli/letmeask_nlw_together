@@ -1,13 +1,14 @@
-import { Link, useHistory } from 'react-router-dom'
-import { useAuth } from '../hooks/useAuth'
 import { FormEvent, useState } from 'react'
+import { Link, useHistory } from 'react-router-dom'
+import { database } from '../services/firebase'
+import { useAuth } from '../hooks/useAuth'
 
 import IllustrationImg from '../assets/images/illustration.svg'
 import LogoImg from '../assets/images/logo.svg'
 
-import '../styles/auth.scss'
 import { Button } from '../components/button'
-import { database } from '../services/firebase'
+
+import '../styles/auth.scss'
 
 export function NewRoom () {
     const { user } = useAuth()
@@ -41,12 +42,7 @@ export function NewRoom () {
                     <img src={LogoImg} alt="letmeask" />
                     <h2>Criar uma nova sala</h2>
                     <form onSubmit={(e) => handleCreateRoom(e)}>
-                        <input 
-                            type="text" 
-                            placeholder="Nome da sala"
-                            value={newRoom}
-                            onChange={(e) => setNewRoom(e.target.value)}
-                        />
+                        <input type="text" placeholder="Nome da sala" value={newRoom} onChange={(e) => setNewRoom(e.target.value)}/>
                         <Button type="submit">
                             Criar Sala
                         </Button>

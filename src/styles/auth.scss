@@ -5,12 +5,12 @@
 
     aside {
         flex: 7;
-        background: #835afd;
-        color: #fff;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 120px 80px;
+        background: #835afd;
+        color: #fff;
         
         img {
             max-width: 320px;
@@ -23,25 +23,25 @@
         }
 
         p {
+            margin-top: 16px;
             font-size: 16px;
             line-height: 32px;
-            margin-top: 16px;
             color: #f8f8f8;
         }
     }
     main {
         flex: 8;
-        margin: 0 32px;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 32px;
     }
 
     .main-content {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         max-width: 320px;
+        display: flex;
+        flex-direction: column;
         align-items: stretch;
         text-align: center;
 
@@ -50,9 +50,9 @@
         }
 
         h2 {
+            font-family: 'Poppins', sans-serif;
             font-size: 24px;
             margin: 64px 0 24px;
-            font-family: 'Poppins', sans-serif;
         }
 
         form {
@@ -74,8 +74,8 @@
 
         p {
             font-size: 14px;
-            color: #737380;
             margin-top: 16px;
+            color: #737380;
         }
 
         a {
@@ -88,15 +88,14 @@
         height: 50px;
         border-radius: 8px;
         font-weight: 500;
-        background: #ea4335;
-        color: #fff;
-
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         border: 0;
         transition: filter 0.2s;
+        background: #ea4335;
+        color: #fff;
 
         img {
             margin-right: 8px ;
@@ -108,25 +107,25 @@
     }
 
     .separator {
-        font-size: 14px;
-        color: #a8a8b3;
-        margin: 32px 0;
         display: flex;
         align-items: center;
+        font-size: 14px;
+        margin: 32px 0;
+        color: #a8a8b3;
 
         &::before {
             content: '';
             flex: 1;
             height: 1px;
-            background: #a8a8b3;
             margin-right: 16px;
+            background: #a8a8b3;
         }
         &::after {
             content: '';
             flex: 1;
             height: 1px;
-            background: #a8a8b3;
             margin-left: 16px;
+            background: #a8a8b3;
         }
     }
 }
